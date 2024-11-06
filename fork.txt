@@ -1,3 +1,0 @@
-Nombre: Fabrizio Fernandez
-IP:192.168.0.5
-Hora: 8:50
