@@ -1,3 +1,12 @@
 Malena Rodrigue Barrio
 Fabrizio Blass Fernandez
 Lautaro Distefano
+
+c-¿Puede GAMMA actualizar su FORK al estado del fork de ALFA?
+Sí, GAMMA puede actualizar su fork (copia) al estado del fork de ALFA.
+Esto significa que GAMMA puede sincronizar su fork con los cambios que ALFA haya hecho en su fork.
+
+d-¿Los datos que tenía en mi repositorio , editados por mi, se pierden si quiero actualizar
+el fork?
+No, mis datos editados no se perderan automáticamente cuando se actualiza el fork. Si no que se intenta
+combinar los cambios del repositorio original con los nuestros cambios.
