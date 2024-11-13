@@ -1,0 +1,57 @@
+A-¿Cómo actualizo mi repositorio, al estado que esté el repo que hice FORK?
+-Se debe configurar el remoto hacia al repositrorio original, obtener los cambios del repositorio
+original y fusionar los cambios a tu rama princiapal, y por ultimo empujar los cambios a tu
+fork en GitHub.
+
+b-¿Puede ALFA actualizar su FORK al estado del fork de GAMMA?
+-Si, ALFA puede actualizar su fork al esatado del fork de GAMMA y la manera es la misma para
+ambos cambia solamente el codigo de GitHub.
+
+C-¿Puede GAMMA actualizar su FORK al estado del fork de ALFA?
+Sí, GAMMA puede actualizar su fork (copia) al estado del fork de ALFA.
+Esto significa que GAMMA puede sincronizar su fork con los cambios que ALFA haya hecho en su fork.
+
+D-¿Los datos que tenía en mi repositorio , editados por mi, se pierden si quiero actualizar
+el fork?
+No, mis datos editados no se perderan automáticamente cuando se actualiza el fork. Si no que se intenta
+combinar los cambios del repositorio original con los nuestros cambios.
+
+E-realizar un listado, paso a paso ,de los comando necesarios para resolver este TP por
+orden de ejecución de los mismos junto con los apellidos y nombre de los alumnos
+
+1- Beta (Rodriguez Malena):
+crea el repositorio llamado "TP_SO_i2_Equipo" con readme y un archivo llamado fork.txt y lo sube
+al repositorio
+
+2- Gamma (Fabrizio Fernandez)
+Se realiza un fork del repositorio de "Beta" y se procede a descargarlo de forma local
+
+git clone https://github.com/fabriblass/TP_SO_i2_Equipo102_GAMMA
+
+se modifica el archivo fork.txt y lo sube a su repositorio de github
+git add .
+git commit -m "Gamma sube 2do punto"
+git push
+
+3- Alfa (Lautaro Torres Distefano)
+Se realiza un fork del repositorio de "Beta" y se procede a descargarlo de forma local
+
+git clone https://github.com/LautaroDistefano/TP_SO_i2_Equipo102_alfa
+
+se modifica el archivo fork.txt y lo sube a su repositorio de github
+git add .
+git commit -m Alfa sube 2do punto"
+git push
+
+4- Beta (Rodriguez Malena)
+Descarga su repositorio de forma local y agrega un archivo llamado NuevoDato.txt
+
+git clone https://github.com/rodriguez-malena/TP_SO_i2_Equipo102
+
+5- Alfa (Lautaro Torres Distefano) y Beta Gamma (Fabrizio Fernandez)
+
+git remote add upstream https://github.com/rodriguez-malena/TP_SO_i2_Equipo102
+git fetch upstream
+git checkout main
+git merge upstream/main 
+git push origin main
